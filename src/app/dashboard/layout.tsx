@@ -15,7 +15,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex h-screen flex-col gap-y-4 p-4">
       <DashboardHeader />
-      <div className="flex grow">
+      <div className="flex gap-x-4 grow">
         <div className="flex flex-col justify-between">
           <div className="flex flex-col gap-y-4">
             <div className="flex flex-col gap-y-4">
@@ -28,14 +28,20 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 </div>
               ))}
             </div>
-            <div className="flex flex-col gap-y-4 items-center">
+            <div className="flex flex-col gap-y-2 items-center">
               <div className="h-[1.5px] w-3/4 rounded-full bg-border" />
-              <Icons.edit className="h-4 w-4" />
+              <div className="h-8 w-8 cursor-pointer hover:bg-neutral-800 rounded-md transition grid place-items-center">
+                <Icons.edit className="h-4 w-4" />
+              </div>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-y-8">
-            <Icons.user className="h-5 w-5" />
-            <Icons.logout className="h-5 w-5" />
+          <div className="flex flex-col items-center gap-y-2">
+            <div className="h-8 w-8 cursor-pointer hover:bg-neutral-800 rounded-md transition grid place-items-center">
+              <Icons.user className="h-4 w-4" />
+            </div>
+            <div className="h-8 w-8 cursor-pointer hover:bg-neutral-800 rounded-md transition grid place-items-center">
+              <Icons.logout className="h-4 w-4" />
+            </div>
           </div>
         </div>
         <div className="grow">{children}</div>
