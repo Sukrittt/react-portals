@@ -1,5 +1,6 @@
 import {
   Award,
+  BadgeAlert,
   CheckCircle2,
   ChevronDown,
   Circle,
@@ -48,4 +49,5 @@ export const Icons = {
   checkmark: CheckCircle2,
   alert: Megaphone,
   umbrella: Umbrella,
+  badgeAlert: BadgeAlert,
 };

@@ -18,17 +18,17 @@ export type ViewTypes = "a" | "b" | "c" | "d" | "e";
 const ELEMENT_MAP: Record<ViewTypes, JSX.Element> = {
   a: <Prediction />,
   b: <Chats />,
-  c: <Community />,
+  c: <BatchReporting />,
   d: <ModActions />,
-  e: <BatchReporting />,
+  e: <Community />,
 };
 
 const listOfIds = {
   a: "Prediction",
   b: "Chats",
-  c: "Community",
+  c: "Batch Reporting",
   d: "Mod Actions",
-  e: "Batch Reporting",
+  e: "Community",
 };
 
 export const DashboardContainer = () => {
