@@ -1,5 +1,8 @@
 import {
+  Award,
+  CheckCircle2,
   ChevronDown,
+  Circle,
   FolderEdit,
   Heart,
   HelpCircle,
@@ -11,8 +14,10 @@ import {
   ShieldAlert,
   Sparkle,
   Sword,
+  Trophy,
   Unlock,
   User2,
+  Users,
   Youtube,
   Zap,
 } from "lucide-react";
@@ -34,4 +39,9 @@ export const Icons = {
   heart: Heart,
   star: Sparkle,
   help: HelpCircle,
+  circle: Circle,
+  trophy: Trophy,
+  users: Users,
+  award: Award,
+  checkmark: CheckCircle2,
 };

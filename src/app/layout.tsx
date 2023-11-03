@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { GeistSans, GeistMono } from "geist/font";
+import { GeistSans } from "geist/font";
 
-import "./globals.css";
+import "./styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Twitch Mod View",

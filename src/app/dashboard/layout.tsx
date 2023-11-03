@@ -37,7 +37,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </div>
           <div className="flex flex-col items-center gap-y-2">
             <div className="h-8 w-8 cursor-pointer hover:bg-neutral-800 rounded-md transition grid place-items-center">
-              <Icons.user className="h-4 w-4" />
+              <Icons.user className="h-4 w-4" fill="white" />
             </div>
             <div className="h-8 w-8 cursor-pointer hover:bg-neutral-800 rounded-md transition grid place-items-center">
               <Icons.logout className="h-4 w-4" />
@@ -54,8 +54,8 @@ export default Layout;
 
 const DashboardHeader = () => {
   const helperIcons = [
-    { icon: Icons.sword },
-    { icon: Icons.heart },
+    { icon: Icons.sword, fill: "white" },
+    { icon: Icons.heart, fill: "white" },
     { icon: Icons.star },
     { icon: Icons.help },
   ];
@@ -63,7 +63,7 @@ const DashboardHeader = () => {
   return (
     <div className="flex items-center gap-x-4 px-3">
       <div className="flex items-center justify-center h-10 w-10 rounded-md bg-green-500">
-        <Icons.sword className="w-6 h-6 text-black" />
+        <Icons.sword className="w-6 h-6 text-black" fill="black" />
       </div>
       <div className="flex gap-x-2 items-center bg-card rounded-md h-12 px-3 hover:bg-neutral-800 transition cursor-pointer">
         <div className="h-7 w-7 relative">
@@ -91,7 +91,7 @@ const DashboardHeader = () => {
               key={index}
               className="grid place-items-center h-8 w-8 cursor-pointer hover:bg-neutral-800 rounded-md transition"
             >
-              <item.icon className="h-4 w-4" />
+              <item.icon className="h-4 w-4" fill={item.fill} />
             </div>
           ))}
         </>
