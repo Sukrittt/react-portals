@@ -8,7 +8,6 @@ import "../../app/styles/react-mosaic-component.css";
 // import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 
 import Chats from "@/components/dashboard-cards/chats";
-import { CardHeader, CardTitle } from "@/components/ui/card";
 import Community from "@/components/dashboard-cards/community";
 import Prediction from "@/components/dashboard-cards/prediction";
 import ModActions from "@/components/dashboard-cards/mod-actions";

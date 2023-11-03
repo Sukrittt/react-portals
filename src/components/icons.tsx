@@ -8,6 +8,7 @@ import {
   HelpCircle,
   History,
   LogOut,
+  Megaphone,
   MessageSquare,
   Radio,
   Shield,
@@ -15,6 +16,7 @@ import {
   Sparkle,
   Sword,
   Trophy,
+  Umbrella,
   Unlock,
   User2,
   Users,
@@ -44,4 +46,6 @@ export const Icons = {
   users: Users,
   award: Award,
   checkmark: CheckCircle2,
+  alert: Megaphone,
+  umbrella: Umbrella,
 };
